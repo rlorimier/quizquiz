@@ -136,10 +136,13 @@ startBtn.addEventListener("click", startQuiz)
 
 let boxContainer = document.getElementById("box-container")
 
+//to start the quiz
 function startQuiz(){
     console.log("hello")
     startBtn.classList.add("hide")
     boxContainer.classList.remove("hide")
+    aviso.classList.remove("hide")
+    instrucoes.classList.remove("hide")
 
     nQuestion.textContent = q1.nQuestion
     question.textContent   = q1.question
@@ -151,10 +154,6 @@ function startQuiz(){
     b.setAttribute('value', '1B')
     c.setAttribute('value', '1C')
 }
-
-// for the first question
-
-
 
 // for the next questions
 function proximaQuestao(nQuestao) {
@@ -222,9 +221,9 @@ function fimDoJogo() {
     //let pont = ''
     //pontos == 0 ? pont = 'ponto' : pont = 'pontos'
 
-    pergunta.textContent   = "Final Score: " + pontos + " out of 10 "
+    pergunta.textContent   = "Final Score: " + pontos + " out of 100 "
 
-    aviso.textContent = "Final Score: " + pontos + " out of 10 " 
+    aviso.textContent = "Final Score: " + pontos + " out of 100 " 
 
     a.textContent = ""
     b.textContent = ""
@@ -237,5 +236,8 @@ function fimDoJogo() {
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
 
+    startBtn.classList.remove("hide")
+    startBtn.innerText = "Restart Quiz"
+    
 }
 

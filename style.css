@@ -88,20 +88,34 @@ h1 {
     display: none;
 }
 
+#startquiz {
+    background: #ccc;
+    color: #191919;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+#startquiz:hover {
+    color: #ccc;
+    background-color: #191919;
+}
+
 #instrucoes {
     background: #ccc;
     color: #191919;
     padding: 0.625rem;
     border-radius: 8px;
-
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
-    animation: piscar .75s infinite alternate;
 }
 
 #aviso {
     color: #00b0ff;
+    margin-bottom: 1rem;
 }
 
 
