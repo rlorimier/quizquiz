@@ -4,12 +4,11 @@ For my Second Project on Code Institute's Diploma in Software Developement cours
 
 You can check out the game by clicking [HERE](https://rlorimier.github.io/quizquiz/)
 
-As my second project I overestimated 
+I underestimated the JavaScript lessons and did not take them as serious as i should. For that reason my project is finalized but not exactly the way I have imagined when I started. I also did not use properly the tolls I have available for support (mentor, tutor, slack community) and for that I fully regret. I managed to finish this project working hard on the last day and I am not proud of that.
 
 ![Space Quiz](assets/media/images/mockup.png)
 
 ## Who is this for?
-
 Everyone can enjoy!
 
 ## Features
@@ -48,10 +47,12 @@ Tests has been carried out on Google Chrome, Microsoft Edge, Firefox, Internet E
 #### Issue
 *On Internet Explorer the website is not supported*
 ### Validators
-- HTML: The website has been through W3C HTML Validator and the results are as follows:
-
 - CSS: The website has also been through Jigsaw Validator with [no errors/warnings](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frlorimier.github.io%2Fquizquiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) shown.
 ![CSS Validator](assets/media/images/cssvalidator.png)
+
+- HTML: The website has been through W3C HTML Validator 
+#### Bug Fixed
+![Issue](assets/media/images/error-html.png)
 
 ## Creating a Repository and Deploying
 - The steps to create a new repository:
