@@ -150,9 +150,9 @@ function startQuiz(){
     b.textContent = q1.choiceB
     c.textContent = q1.choiceC
 
-    a.setAttribute('value', '1A')
-    b.setAttribute('value', '1B')
-    c.setAttribute('value', '1C')
+    a.setAttribute('value', 'answer1')
+    b.setAttribute('value', 'answer2')
+    c.setAttribute('value', 'answer3')
 }
 
 // for the next questions
