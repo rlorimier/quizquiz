@@ -4,6 +4,8 @@ For my Second Project on Code Institute's Diploma in Software Developement cours
 
 You can check out the game by clicking [HERE](https://rlorimier.github.io/quizquiz/)
 
+As my second project I overestimated 
+
 ![Space Quiz](assets/media/images/mockup.png)
 
 ## Who is this for?
@@ -15,7 +17,9 @@ Everyone can enjoy!
 - Created in HTML5, CSS and JavaScript using Visual Studio Code.
 
 ### Features for future implementation
-
+- Add a list with best scores and save it
+- Add more questions
+- Shuffle the questions
 ## Technologies used
 - HTML5
 - CSS3
@@ -35,10 +39,14 @@ Everyone can enjoy!
 ## Credits
 ### Content
 - All questions were taken from several different websites.
+### Coding
+- The main code was taken from [This Website](https://edsonmaiap.wordpress.com/2021/09/25/curso-de-js-aula-20-aplicacoes-com-javascript-quiz-extensivel-e-com-placar/) and then edited as needed.
 ## Testing
 ### Browser Testing
 The website buttons, links and functionality has been tested.
 Tests has been carried out on Google Chrome, Microsoft Edge, Firefox, Internet Explorer and Samsung Internet.
+#### Issue
+*On Internet Explorer the website is not supported*
 ### Validators
 - HTML: The website has been through W3C HTML Validator and the results are as follows:
 
@@ -67,4 +75,3 @@ Tests has been carried out on Google Chrome, Microsoft Edge, Firefox, Internet E
 
 
 
-https://edsonmaiap.wordpress.com/2021/09/25/curso-de-js-aula-20-aplicacoes-com-javascript-quiz-extensivel-e-com-placar/
