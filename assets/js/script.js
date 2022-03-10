@@ -132,15 +132,17 @@ let totalDeQuestoes = (questoes.length)-1
 total.textContent = totalDeQuestoes
 
 // for the first question
-nQuestion.textContent = q1.nQuestion
-question.textContent   = q1.question
-a.textContent = q1.choiceA
-b.textContent = q1.choiceB
-c.textContent = q1.choiceC
+function startQuiz() {
+    nQuestion.textContent = q1.nQuestion
+    question.textContent   = q1.question
+    a.textContent = q1.choiceA
+    b.textContent = q1.choiceB
+    c.textContent = q1.choiceC
 
-a.setAttribute('value', '1A')
-b.setAttribute('value', '1B')
-c.setAttribute('value', '1C')
+    a.setAttribute('value', '1A')
+    b.setAttribute('value', '1B')
+    c.setAttribute('value', '1C')
+}
 
 // for the next questions
 function proximaQuestao(nQuestao) {
@@ -184,7 +186,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 
     // update score
     placar = pontos
-    instrucoes.textContent = "Your Score: " + placar
+    instrucoes.textContent = "Correct Answers: " + placar
 
     // block answers
     bloquearAlternativas()
@@ -208,9 +210,9 @@ function fimDoJogo() {
     let pont = ''
     pontos == 0 ? pont = 'ponto' : pont = 'pontos'
 
-    pergunta.textContent   = "Final Score: " + pontos + " "
+    pergunta.textContent   = "Final Score: " + pontos + " out of 10 "
 
-    aviso.textContent = "Final Score: " + pontos + " " 
+    aviso.textContent = "Final Score: " + pontos + " out of 10 "
 
     a.textContent = ""
     b.textContent = ""
@@ -222,5 +224,9 @@ function fimDoJogo() {
 
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
+
+    let restart = document.getElementById("restart")
+    restart.classList.remove("hide")
+    restart.addEventListener("click", startQuiz)
 }
 

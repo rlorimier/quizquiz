@@ -110,7 +110,7 @@ let placar = 0
 
 // QUESTIONS
 let nQuestion = document.querySelector('#nQuestion')
-let question   = document.querySelector('#pergunta')
+let question = document.querySelector('#pergunta')
 
 // ANSWERS
 let a = document.querySelector('#a')
@@ -131,16 +131,30 @@ numero.textContent = q1.nQuestion
 let totalDeQuestoes = (questoes.length)-1
 total.textContent = totalDeQuestoes
 
-// for the first question
-nQuestion.textContent = q1.nQuestion
-question.textContent   = q1.question
-a.textContent = q1.choiceA
-b.textContent = q1.choiceB
-c.textContent = q1.choiceC
+let startBtn = document.getElementById("startquiz")
+startBtn.addEventListener("click", startQuiz)
 
-a.setAttribute('value', '1A')
-b.setAttribute('value', '1B')
-c.setAttribute('value', '1C')
+let boxContainer = document.getElementById("box-container")
+
+function startQuiz(){
+    console.log("hello")
+    startBtn.classList.add("hide")
+    boxContainer.classList.remove("hide")
+
+    nQuestion.textContent = q1.nQuestion
+    question.textContent   = q1.question
+    a.textContent = q1.choiceA
+    b.textContent = q1.choiceB
+    c.textContent = q1.choiceC
+
+    a.setAttribute('value', '1A')
+    b.setAttribute('value', '1B')
+    c.setAttribute('value', '1C')
+}
+
+// for the first question
+
+
 
 // for the next questions
 function proximaQuestao(nQuestao) {
@@ -222,5 +236,6 @@ function fimDoJogo() {
 
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
+
 }
 
