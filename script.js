@@ -155,19 +155,22 @@ function proximaQuestao(nQuestao) {
     c.setAttribute('value', nQuestao+'C')
 }
 
+// to hide the choices
 function bloquearAlternativas() {
     a.classList.add('hide')
     b.classList.add('hide')
     c.classList.add('hide')
 }
 
+//to unhide the choices
 function desbloquearAlternativas() {
     a.classList.remove('hide')
     b.classList.remove('hide')
     c.classList.remove('hide')
 }
 
-function verificarSeAcertou(nQuestao, resposta) {
+// to check if is the right answer
+function ifCorrect(nQuestao, resposta) {
 
     let numeroDaQuestao = nQuestao.value
     console.log("Questão " + numeroDaQuestao)
@@ -201,7 +204,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 }
 
 function fimDoJogo() {
-    instrucoes.textContent = "Fim de Jogo!"
+    instrucoes.textContent = "Game Over!"
     nQuestion.textContent = ""
 
     let pont = ''
