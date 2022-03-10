@@ -173,7 +173,6 @@ function desbloquearAlternativas() {
 function verificarSeAcertou(nQuestao, resposta) {
 
     let numeroDaQuestao = nQuestao.value
-    console.log("Questão " + numeroDaQuestao)
 
     let respostaEscolhida = resposta.textContent
 
