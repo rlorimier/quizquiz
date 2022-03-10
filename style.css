@@ -35,7 +35,7 @@ section {
 h1 {
     text-align: center;
     font-size: 1.75rem;
-    margin: 0.625rem;
+    margin: 1rem;
 }
 
 .centro {
@@ -60,6 +60,8 @@ h1 {
 
 /* article que acomoda a questao completa */
 .box-container {
+    width: 950px;
+    height: 450px;
     padding: 1.5rem;
     border: 1px solid #ececec;
     border-radius: 5px;
