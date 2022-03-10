@@ -43,7 +43,7 @@ Tests has been carried out on Google Chrome, Microsoft Edge, Firefox, Internet E
 - HTML: The website has been through W3C HTML Validator and the results are as follows:
 
 - CSS: The website has also been through Jigsaw Validator with [no errors/warnings](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frlorimier.github.io%2Fquizquiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) shown.
-[CSS Validator](assets/media/images/cssvalidator.png)
+![CSS Validator](assets/media/images/cssvalidator.png)
 
 ## Creating a Repository and Deploying
 - The steps to create a new repository:
