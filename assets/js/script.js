@@ -129,7 +129,6 @@ let total  = document.querySelector('#total')
 numero.textContent = q1.nQuestion
 
 let totalDeQuestoes = (questoes.length)-1
-//console.log("Total de questões " + totalDeQuestoes)
 total.textContent = totalDeQuestoes
 
 // for the first question
@@ -156,51 +155,44 @@ function proximaQuestao(nQuestao) {
     c.setAttribute('value', nQuestao+'C')
 }
 
+// to hide the choices
 function bloquearAlternativas() {
     a.classList.add('hide')
     b.classList.add('hide')
     c.classList.add('hide')
 }
 
+//to unhide the choices
 function desbloquearAlternativas() {
     a.classList.remove('hide')
     b.classList.remove('hide')
     c.classList.remove('hide')
 }
 
+// to check if is the right answer
 function verificarSeAcertou(nQuestao, resposta) {
 
     let numeroDaQuestao = nQuestao.value
-    console.log("Questão " + numeroDaQuestao)
 
     let respostaEscolhida = resposta.textContent
-    //console.log("RespU " + respostaEscolhida)
 
     let correct = questoes[numeroDaQuestao].correctAnswer
-    //console.log("RespC " + certa)
 
     if(respostaEscolhida == correct) {
-        //console.log("Acertou")
-        //respostaEsta.textContent = "Correta 😊"
-        pontos += 10 // pontos = pontos + 10
-    } else {
-        //console.log("Errou!")
-        //respostaEsta.textContent = "Errada 😢"
+        pontos += 10 
     }
 
-    // atualizar placar
+    // update score
     placar = pontos
     instrucoes.textContent = "Your Score: " + placar
 
-    // bloquear a escolha de opcoes
+    // block answers
     bloquearAlternativas()
 
     setTimeout(function() {
-        //respostaEsta.textContent = '...'
         proxima = numeroDaQuestao+1
 
         if(proxima > totalDeQuestoes) {
-            console.log('Fim do Jogo!')
             fimDoJogo()
         } else {
             proximaQuestao(proxima)
@@ -210,15 +202,15 @@ function verificarSeAcertou(nQuestao, resposta) {
 }
 
 function fimDoJogo() {
-    instrucoes.textContent = "Fim de Jogo!"
+    instrucoes.textContent = "Game Over!"
     nQuestion.textContent = ""
 
     let pont = ''
     pontos == 0 ? pont = 'ponto' : pont = 'pontos'
 
-    pergunta.textContent   = "You've scored " + pontos + " " + pont
+    pergunta.textContent   = "Final Score: " + pontos + " "
 
-    aviso.textContent = "You've scored " + pontos + " " + pont
+    aviso.textContent = "Final Score: " + pontos + " " 
 
     a.textContent = ""
     b.textContent = ""
@@ -230,7 +222,5 @@ function fimDoJogo() {
 
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
-
-    
 }
 

@@ -119,3 +119,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1000px) {
+
+    .box-container {
+        width: 550px;
+        height: 850px;
+    }
+}
