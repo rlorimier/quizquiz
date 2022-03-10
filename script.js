@@ -1,101 +1,101 @@
 //questions
 const q0 = {
-    numQuestao   : 0,
-    pergunta     : "Pergunta",
-    alternativaA : "Alternativa A",
-    alternativaB : "Alternativa B",
-    alternativaC : "Alternativa C",
-    correta      : "0",
+    nQuestion: 0,
+    question: "Pergunta",
+    choiceA: "Alternativa A",
+    choiceB: "Alternativa B",
+    choiceC: "Alternativa C",
+    correctAnswer: "0",
 }
 
 const q1 = {
-    numQuestao   : 1,
-    pergunta     : "What is an Equinox:",
-    alternativaA : "The time when the plane of Earth's equator passes through the geometric center of the Sun's disk",
-    alternativaB : "The point where the Sun appears to reach either its highest or lowest point in the sky for the year",
-    alternativaC : "The effect caused by the interaction of charged particles from the Sun with atoms in the upper atmosphere",
-    correta      : "The time when the plane of Earth's equator passes through the geometric center of the Sun's disk",
+    nQuestion: 1,
+    question: "What is an Equinox:",
+    choiceA: "The time when the plane of Earth's equator passes through the geometric center of the Sun's disk",
+    choiceB: "The point where the Sun appears to reach either its highest or lowest point in the sky for the year",
+    choiceC: "The effect caused by the interaction of charged particles from the Sun with atoms in the upper atmosphere",
+    correctAnswer: "The time when the plane of Earth's equator passes through the geometric center of the Sun's disk",
 }
 
 const q2 = {
-    numQuestao   : 2,
-    pergunta     : "What NASA stands for:",
-    alternativaA : "National Aliance and Space Aeronautics",
-    alternativaB : "Nacional Administration and Space Aliance",
-    alternativaC : "National Aeronautics and Space Administration",
-    correta      : "National Aeronautics and Space Administration",
+    nQuestion: 2,
+    question: "What NASA stands for:",
+    choiceA: "National Aliance and Space Aeronautics",
+    choiceB: "Nacional Administration and Space Aliance",
+    choiceC: "National Aeronautics and Space Administration",
+    correctAnswer: "National Aeronautics and Space Administration",
 }
 
 const q3 = {
-    numQuestao   : 3,
-    pergunta     : "The most common type of black holes, they can be up to 20 times more massive than the Sun:",
-    alternativaA : "Primordial Black Holes",
-    alternativaB : "Stellar Black Holes",
-    alternativaC : "Supermassive Black Holes",
-    correta      : "Stellar Black Holes",
+    nQuestion: 3,
+    question: "The most common type of black holes, they can be up to 20 times more massive than the Sun:",
+    choiceA: "Primordial Black Holes",
+    choiceB: "Stellar Black Holes",
+    choiceC: "Supermassive Black Holes",
+    correctAnswer: "Stellar Black Holes",
 }
 
 const q4 = {
-    numQuestao   : 4,
-    pergunta     : "What is the deadliest planet in the Solar System?",
-    alternativaA : "Venus",
-    alternativaB : "Saturn",
-    alternativaC : "Mars",
-    correta      : "Venus",
+    nQuestion: 4,
+    question: "What is the deadliest planet in the Solar System?",
+    choiceA: "Venus",
+    choiceB: "Saturn",
+    choiceC: "Mars",
+    correctAnswer: "Venus",
 }
 
 const q5 = {
-    numQuestao   : 5,
-    pergunta     : "The Earth's average distance to the Sun is:",
-    alternativaA : "109 million km",
-    alternativaB : "149 million km",
-    alternativaC : "199 million km",
-    correta      : "149 million km",
+    nQuestion: 5,
+    question: "The Earth's average distance to the Sun is:",
+    choiceA: "109 million km",
+    choiceB: "149 million km",
+    choiceC: "199 million km",
+    correctAnswer: "149 million km",
 }
 
 const q6 = {
-    numQuestao   : 6,
-    pergunta     : "What is the Sun mainly made of?",
-    alternativaA : "Rock",
-    alternativaB : "Lava",
-    alternativaC : "Gas",
-    correta      : "Gas",
+    nQuestion: 6,
+    question: "What is the Sun mainly made of?",
+    choiceA: "Rock",
+    choiceB: "Lava",
+    choiceC: "Gas",
+    correctAnswer: "Gas",
 }
 
 const q7 = {
-    numQuestao   : 7,
-    pergunta     : "How many moons does Mars have?",
-    alternativaA : "6",
-    alternativaB : "4",
-    alternativaC : "2",
-    correta      : "2",
+    nnQuestion: 7,
+    question: "How many moons does Mars have?",
+    choiceA: "6",
+    choiceB: "4",
+    choiceC: "2",
+    correctAnswer: "2",
 }
 
 const q8 = {
-    numQuestao   : 8,
-    pergunta     : "Icy bodies of frozen gases, rocks and dust left over from the formation of the solar system are:",
-    alternativaA : "Comets",
-    alternativaB : "Stars",
-    alternativaC : "Asteroids",
-    correta      : "Comets",
+    nQuestion: 8,
+    question: "Icy bodies of frozen gases, rocks and dust left over from the formation of the solar system are:",
+    choiceA: "Comets",
+    choiceB: "Stars",
+    choiceC: "Asteroids",
+    correctAnswer: "Comets",
 }
 
 const q9 = {
-    numQuestao   : 9,
-    pergunta     : "When did Apollo-11 successfully land on the Moon?",
-    alternativaA : "1968",
-    alternativaB : "1969",
-    alternativaC : "1970",
-    correta      : "1969",
+    nQuestion: 9,
+    question: "When did Apollo-11 successfully land on the Moon?",
+    choiceA: "1968",
+    choiceB: "1969",
+    choiceC: "1970",
+    correctAnswer: "1969",
 }
 
 const q10 = {
-    numQuestao   : 10,
-    pergunta     : "Where is located the Asteroid Belt?",
-    alternativaA : "Between Mars and Jupiter",
-    alternativaB : "Between Mars and Earth",
-    alternativaC : "Between Earth and Jupiter",
-    correta      : "Between Earth and Jupiter"
+    nQuestion: 10,
+    question: "Where is located the Asteroid Belt?",
+    choiceA: "Between Mars and Jupiter",
+    choiceB: "Between Mars and Earth",
+    choiceC: "Between Earth and Jupiter",
+    correctAnswer: "Between Earth and Jupiter"
 }
 
 // array with all questions
@@ -109,8 +109,8 @@ let pontos = 0
 let placar = 0 
 
 // QUESTIONS
-let numQuestao = document.querySelector('#numQuestao')
-let pergunta   = document.querySelector('#pergunta')
+let nQuestion = document.querySelector('#nQuestion')
+let question   = document.querySelector('#pergunta')
 
 // ANSWERS
 let a = document.querySelector('#a')
@@ -126,18 +126,18 @@ let alternativas = document.querySelector('#alternativas')
 let numero = document.querySelector('#numero')
 let total  = document.querySelector('#total')
 
-numero.textContent = q1.numQuestao
+numero.textContent = q1.nQuestion
 
 let totalDeQuestoes = (questoes.length)-1
 //console.log("Total de questões " + totalDeQuestoes)
 total.textContent = totalDeQuestoes
 
 // for the first question
-numQuestao.textContent = q1.numQuestao
-pergunta.textContent   = q1.pergunta
-a.textContent = q1.alternativaA
-b.textContent = q1.alternativaB
-c.textContent = q1.alternativaC
+nQuestion.textContent = q1.nQuestion
+question.textContent   = q1.question
+a.textContent = q1.choiceA
+b.textContent = q1.choiceB
+c.textContent = q1.choiceC
 
 a.setAttribute('value', '1A')
 b.setAttribute('value', '1B')
@@ -146,26 +146,26 @@ c.setAttribute('value', '1C')
 // for the next questions
 function proximaQuestao(nQuestao) {
     numero.textContent = nQuestao
-    numQuestao.textContent = questoes[nQuestao].numQuestao
-    pergunta.textContent   = questoes[nQuestao].pergunta
-    a.textContent = questoes[nQuestao].alternativaA
-    b.textContent = questoes[nQuestao].alternativaB
-    c.textContent = questoes[nQuestao].alternativaC
+    nQuestion.textContent = questoes[nQuestao].nQuestion
+    question.textContent   = questoes[nQuestao].question
+    a.textContent = questoes[nQuestao].choiceA
+    b.textContent = questoes[nQuestao].choiceB
+    c.textContent = questoes[nQuestao].choiceC
     a.setAttribute('value', nQuestao+'A')
     b.setAttribute('value', nQuestao+'B')
     c.setAttribute('value', nQuestao+'C')
 }
 
 function bloquearAlternativas() {
-    a.classList.add('bloqueado')
-    b.classList.add('bloqueado')
-    c.classList.add('bloqueado')
+    a.classList.add('hide')
+    b.classList.add('hide')
+    c.classList.add('hide')
 }
 
 function desbloquearAlternativas() {
-    a.classList.remove('bloqueado')
-    b.classList.remove('bloqueado')
-    c.classList.remove('bloqueado')
+    a.classList.remove('hide')
+    b.classList.remove('hide')
+    c.classList.remove('hide')
 }
 
 function verificarSeAcertou(nQuestao, resposta) {
@@ -176,10 +176,10 @@ function verificarSeAcertou(nQuestao, resposta) {
     let respostaEscolhida = resposta.textContent
     //console.log("RespU " + respostaEscolhida)
 
-    let certa = questoes[numeroDaQuestao].correta
+    let correct = questoes[numeroDaQuestao].correctAnswer
     //console.log("RespC " + certa)
 
-    if(respostaEscolhida == certa) {
+    if(respostaEscolhida == correct) {
         //console.log("Acertou")
         //respostaEsta.textContent = "Correta 😊"
         pontos += 10 // pontos = pontos + 10
@@ -211,7 +211,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 
 function fimDoJogo() {
     instrucoes.textContent = "Fim de Jogo!"
-    numQuestao.textContent = ""
+    nQuestion.textContent = ""
 
     let pont = ''
     pontos == 0 ? pont = 'ponto' : pont = 'pontos'

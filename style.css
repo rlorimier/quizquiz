@@ -47,7 +47,7 @@ h1 {
     align-items: center;
 }
 
-#numQuestao {
+#nQuestion {
     display: block;
     background: #00b0ff;
     padding: 4px 10px 2px 10px;
@@ -78,11 +78,11 @@ h1 {
     cursor: pointer;
 }
 
-.bloqueado {
+.hide {
     display: none;
 }
 
-.bloqueado li:hover {
+.hide li:hover {
     display: none;
 }
 
