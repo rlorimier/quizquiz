@@ -9,7 +9,6 @@
 }
 
 body {
-    background: url("../quizquiz/assets/media/images/space_stars.jpg");
     width: 100vw;
     height: 100vh;
     background: #222;
@@ -119,4 +118,13 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1000px) {
+
+    .box-container {
+        width: 550px;
+        height: 850px;
+    }
 }
