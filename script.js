@@ -170,7 +170,7 @@ function desbloquearAlternativas() {
 }
 
 // to check if is the right answer
-function ifCorrect(nQuestao, resposta) {
+function verificarSeAcertou(nQuestao, resposta) {
 
     let numeroDaQuestao = nQuestao.value
     console.log("Questão " + numeroDaQuestao)
@@ -204,7 +204,7 @@ function ifCorrect(nQuestao, resposta) {
 }
 
 function fimDoJogo() {
-    instrucoes.textContent = "Game Over!"
+    instrucoes.textContent = "Fim de Jogo!"
     nQuestion.textContent = ""
 
     let pont = ''
