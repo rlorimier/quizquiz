@@ -8,39 +8,29 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <section class='conteudos tela-principal'>
+       <h1>Space Quiz</h1>
+       <article class='centro' id='instrucoes'>
+            Your Score: 0
+       </article>
+       <article class='box-container'>
+            <header class='box-question'>
+                <span id='numQuestao'></span>
+                <h2 id='pergunta'></h2>
+            </header>
+            <div class='box-answers'>
+                <ol type='A' id='alternativas'>
+                    <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                </ol>
+            </div>
+        </article>
+        <article id='aviso'>Question: <span id='numero'></span> / <span id='total'></span></article>  
+    </section>
 
-    <main class="tela-principal">
+    <footer class='centro'>Desenvolvido por Edson Maia &copy; 2021</footer>
 
-        <section class='conteudos'>
-
-            <h1>Space Quiz</h1>
-
-            <article class='centro' id='instrucoes'>
-                Leia a questão e clique na resposta correta
-            </article>
-
-            <article class='questoes'>
-                
-                <header class='questao'>
-                    <span id='numQuestao'></span>
-                    <h2 id='pergunta'></h2>
-                </header>
-
-                <div class='corpo'>
-                    <ol type='A' id='alternativas'>
-                        <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
-                        <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
-                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
-                    </ol>
-                </div>
-            </article>
-            
-            <article id='aviso'>Questão <span id='numero'></span> de <span id='total'></span></article>
-            
-        </section>
-
-        <footer class='centro'>Desenvolvido por Edson Maia &copy; 2021</footer>
-    </main>
 
 <script src="script.js"></script>
 

@@ -42,10 +42,9 @@ h1 {
     text-align: center;
 }
 
-.questao {
+.box-question {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 #numQuestao {
@@ -60,21 +59,21 @@ h1 {
 }
 
 /* article que acomoda a questao completa */
-.questoes {
+.box-container {
     padding: 1.5rem;
     border: 1px solid #ececec;
     border-radius: 5px;
     margin-bottom: 2rem;
 }
 
-.questoes ol li {
+.box-container ol li {
     display: block;
     margin: 1rem;
     padding: 1rem;
     border-radius: 8px;
 }
 
-.questoes ol li:hover {
+.box-container ol li:hover {
     background: #00b0ff;
     cursor: pointer;
 }
@@ -103,34 +102,16 @@ h1 {
     color: #00b0ff;
 }
 
-/* ANIMACAO */
-
-/* Animar o input */
-@keyframes piscar {
-    0% {
-        filter: drop-shadow(0 0 15px #00b0ff);
-        -webkit-filter: drop-shadow(0 0 15px #00b0ff);
-        -moz-filter: drop-shadow(0 0 15px #00b0ff);
-        -o-filter: drop-shadow(0 0 15px #00b0ff);
-        -ms-filter: drop-shadow(0 0 15px #00b0ff);
-    }
-    100% {
-    }
-}
-
-.animar {
-    animation: piscar .75s infinite alternate;
-}
-
-.aparecer {
-    animation: aparecer .5s infinite alternate;
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0
-    }
-    100% {
-        opacity: 1
-    }
+footer {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    margin-top: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

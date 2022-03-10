@@ -105,20 +105,20 @@ let titulo = document.querySelector('h1')
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')
 //let respostaEsta = document.querySelector('#respostaEsta')
-let pontos = 0 // pontos para o placar
-let placar = 0 // placar
+let pontos = 0 
+let placar = 0 
 
-// PERGUNTA
+// QUESTIONS
 let numQuestao = document.querySelector('#numQuestao')
 let pergunta   = document.querySelector('#pergunta')
 
-// ALTERNATIVAS
+// ANSWERS
 let a = document.querySelector('#a')
 let b = document.querySelector('#b')
 let c = document.querySelector('#c')
 
 // article com a class questoes
-let articleQuestoes = document.querySelector('.questoes')
+let articleQuestoes = document.querySelector('.box-container')
 // ol li com as alternativas
 let alternativas = document.querySelector('#alternativas')
 
@@ -129,22 +129,21 @@ let total  = document.querySelector('#total')
 numero.textContent = q1.numQuestao
 
 let totalDeQuestoes = (questoes.length)-1
-console.log("Total de questões " + totalDeQuestoes)
+//console.log("Total de questões " + totalDeQuestoes)
 total.textContent = totalDeQuestoes
 
-// MONTAR A 1a QUESTAO COMPLETA, para iniciar o Quiz
+// for the first question
 numQuestao.textContent = q1.numQuestao
 pergunta.textContent   = q1.pergunta
 a.textContent = q1.alternativaA
 b.textContent = q1.alternativaB
 c.textContent = q1.alternativaC
 
-// CONFIGURAR O VALUE INICIAL DA 1a QUESTAO COMPLETA
 a.setAttribute('value', '1A')
 b.setAttribute('value', '1B')
 c.setAttribute('value', '1C')
 
-// PARA MONTAR AS PROXIMAS QUESTOES
+// for the next questions
 function proximaQuestao(nQuestao) {
     numero.textContent = nQuestao
     numQuestao.textContent = questoes[nQuestao].numQuestao
@@ -191,7 +190,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 
     // atualizar placar
     placar = pontos
-    instrucoes.textContent = "Pontos " + placar
+    instrucoes.textContent = "Your Score: " + placar
 
     // bloquear a escolha de opcoes
     bloquearAlternativas()
@@ -217,9 +216,9 @@ function fimDoJogo() {
     let pont = ''
     pontos == 0 ? pont = 'ponto' : pont = 'pontos'
 
-    pergunta.textContent   = "Você conseguiu " + pontos + " " + pont
+    pergunta.textContent   = "You've scored " + pontos + " " + pont
 
-    aviso.textContent = "Você conseguiu " + pontos + " " + pont
+    aviso.textContent = "You've scored " + pontos + " " + pont
 
     a.textContent = ""
     b.textContent = ""
@@ -235,32 +234,3 @@ function fimDoJogo() {
     
 }
 
-let quizQuestions = [
-    q0 = {
-        nQuestion: 0,
-        question: "Pergunta",
-        choiceA: "Alternativa A",
-        choiceB: "Alternativa B",
-        choiceC: "Alternativa C",
-        correctAnswer: "0",
-    },
-
-    q1 = {
-		nQuestion: 1,
-		question: "What is an Equinox:",
-        choiceA: "The time when the plane of Earth's equator passes through the geometric center of the Sun's disk",
-        choiceB: "The point where the Sun appears to reach either its highest or lowest point in the sky for the year",
-        choiceC: "The effect caused by the interaction of charged particles from the Sun with atoms in the upper atmosphere",
-		correctAnswer: "The time when the plane of Earth's equator passes through the geometric center of the Sun's disk"
-	},
-        
-    q2 = {
-        nQuestion: 2,
-        question: "What NASA stands for:",
-        choiceA: "National Aliance and Space Aeronautics",
-        choiceB: "Nacional Administration and Space Aliance",
-        choiceC: "National Aeronautics and Space Administration",
-        correctAnswer: "National Aeronautics and Space Administration"
-    },
-    
-]
