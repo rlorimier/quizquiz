@@ -194,7 +194,6 @@ function verificarSeAcertou(nQuestao, resposta) {
         proxima = numeroDaQuestao+1
 
         if(proxima > totalDeQuestoes) {
-            console.log('Fim do Jogo!')
             fimDoJogo()
         } else {
             proximaQuestao(proxima)
@@ -204,7 +203,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 }
 
 function fimDoJogo() {
-    instrucoes.textContent = "Fim de Jogo!"
+    instrucoes.textContent = "Game Over!"
     nQuestion.textContent = ""
 
     let pont = ''
