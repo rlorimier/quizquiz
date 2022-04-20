@@ -110,7 +110,7 @@ let placar = 0
 
 // QUESTIONS
 let nQuestion = document.querySelector('#nQuestion')
-let question   = document.querySelector('#pergunta')
+let question = document.querySelector('#pergunta')
 
 // ANSWERS
 let a = document.querySelector('#a')
@@ -131,17 +131,28 @@ numero.textContent = q1.nQuestion
 let totalDeQuestoes = (questoes.length)-1
 total.textContent = totalDeQuestoes
 
-// for the first question
-function startQuiz() {
+let startBtn = document.getElementById("startquiz")
+startBtn.addEventListener("click", startQuiz)
+
+let boxContainer = document.getElementById("box-container")
+
+//to start the quiz
+function startQuiz(){
+    console.log("hello")
+    startBtn.classList.add("hide")
+    boxContainer.classList.remove("hide")
+    aviso.classList.remove("hide")
+    instrucoes.classList.remove("hide")
+
     nQuestion.textContent = q1.nQuestion
     question.textContent   = q1.question
     a.textContent = q1.choiceA
     b.textContent = q1.choiceB
     c.textContent = q1.choiceC
 
-    a.setAttribute('value', '1A')
-    b.setAttribute('value', '1B')
-    c.setAttribute('value', '1C')
+    a.setAttribute('value', '1')
+    b.setAttribute('value', '2')
+    c.setAttribute('value', '3')
 }
 
 // for the next questions
@@ -186,7 +197,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 
     // update score
     placar = pontos
-    instrucoes.textContent = "Correct Answers: " + placar
+    instrucoes.textContent = "Your Score: " + placar
 
     // block answers
     bloquearAlternativas()
@@ -207,12 +218,12 @@ function fimDoJogo() {
     instrucoes.textContent = "Game Over!"
     nQuestion.textContent = ""
 
-    let pont = ''
-    pontos == 0 ? pont = 'ponto' : pont = 'pontos'
+    //let pont = ''
+    //pontos == 0 ? pont = 'ponto' : pont = 'pontos'
 
-    pergunta.textContent   = "Final Score: " + pontos + " out of 10 "
+    pergunta.textContent   = "Final Score: " + pontos + " out of 100 "
 
-    aviso.textContent = "Final Score: " + pontos + " out of 10 "
+    aviso.textContent = "Final Score: " + pontos + " out of 100 " 
 
     a.textContent = ""
     b.textContent = ""
@@ -225,8 +236,16 @@ function fimDoJogo() {
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
 
-    let restart = document.getElementById("restart")
-    restart.classList.remove("hide")
-    restart.addEventListener("click", startQuiz)
+    startBtn.classList.remove("hide")
+    startBtn.innerText = "Restart Quiz"
+    startBtn.addEventListener("click", resetQuiz)
+}
+
+function resetQuiz() {
+    articleQuestoes.style.display = ""
+    pergunta.textContent = ""
+    aviso.textContent = ""
+    resposta.textContent = ""
+
 }
 
