@@ -60,6 +60,7 @@ h1 {
 
 /* QUIZ CONTAINER */
 .box-container {
+    background-color: #191919;
     width: 950px;
     height: 450px;
     padding: 1.5rem;
@@ -103,12 +104,11 @@ h1 {
     background-color: #191919;
 }
 
-#instrucoes {
+.correctcounter {
     background: #ccc;
     color: #191919;
     padding: 0.625rem;
     border-radius: 8px;
-    display: flex;
     justify-content: center;
     margin-bottom: 1rem;
 }

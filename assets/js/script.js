@@ -102,7 +102,7 @@ const q10 = {
 const questoes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
 
 let titulo = document.querySelector('h1')
-let instrucoes = document.querySelector('#instrucoes')
+let correctCounter = document.querySelector('.correctcounter')
 let aviso = document.querySelector('#aviso')
 //let respostaEsta = document.querySelector('#respostaEsta')
 let pontos = 0 
@@ -124,7 +124,7 @@ let alternativas = document.querySelector('#alternativas')
 
 
 let numero = document.querySelector('#numero')
-let total  = document.querySelector('#total')
+//let total  = document.querySelector('#total')
 
 numero.textContent = q1.nQuestion
 
@@ -142,7 +142,7 @@ function startQuiz(){
     startBtn.classList.add("hide")
     boxContainer.classList.remove("hide")
     aviso.classList.remove("hide")
-    instrucoes.classList.remove("hide")
+    correctCounter.classList.remove("hide")
 
     nQuestion.textContent = q1.nQuestion
     question.textContent   = q1.question
@@ -192,12 +192,12 @@ function verificarSeAcertou(nQuestao, resposta) {
     let correct = questoes[numeroDaQuestao].correctAnswer
 
     if(respostaEscolhida == correct) {
-        pontos += 10 
+        pontos ++ 
     }
 
     // update score
     placar = pontos
-    instrucoes.textContent = "Your Score: " + placar
+    correctCounter.innerText = "Correct Answers: " + placar
 
     // block answers
     bloquearAlternativas()
@@ -210,12 +210,12 @@ function verificarSeAcertou(nQuestao, resposta) {
         } else {
             proximaQuestao(proxima)
         }
-    }, 250)
+    }, 2500)
     desbloquearAlternativas()
 }
 
 function fimDoJogo() {
-    instrucoes.textContent = "Game Over!"
+    correctCounter.innerText = "Game Over!"
     nQuestion.textContent = ""
 
     //let pont = ''
