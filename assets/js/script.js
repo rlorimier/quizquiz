@@ -126,8 +126,8 @@ let questionNumber = document.querySelector('#questionn')
 
 questionNumber.textContent = q1.nQuestion
 
-let totalDeQuestoes = (allQuestions.length)-1
-total.textContent = totalDeQuestoes
+let totalQuestions = (allQuestions.length)-1
+total.textContent = totalQuestions
 
 let startBtn = document.getElementById("startquiz")
 startBtn.addEventListener("click", startQuiz)
@@ -136,14 +136,14 @@ let boxContainer = document.getElementById("box-container")
 
 //to start the quiz
 function startQuiz(){
-    console.log("hello")
+    // console.log("hello")
     startBtn.classList.add("hide")
     boxContainer.classList.remove("hide")
     numberOfQuestions.classList.remove("hide")
     correctCounter.classList.remove("hide")
 
     nQuestion.textContent = q1.nQuestion
-    question.textContent   = q1.question
+    question.textContent = q1.question
     optionA.textContent = q1.choiceA
     optionB.textContent = q1.choiceB
     optionC.textContent = q1.choiceC
@@ -200,9 +200,9 @@ function verificarSeAcertou(nQuestao, resposta) {
     bloquearAlternativas()
 
     setTimeout(function() {
-        proxima = numeroDaQuestao+1
+        proxima = numeroDaQuestao + 1
 
-        if(proxima > totalDeQuestoes) {
+        if(proxima > totalQuestions) {
             gameOver()
         } else {
             nextQuestions(proxima)
