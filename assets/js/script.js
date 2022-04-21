@@ -103,7 +103,7 @@ const allQuestions = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
 
 let titulo = document.querySelector('h1')
 let correctCounter = document.querySelector('.correctcounter')
-let aviso = document.querySelector('#aviso')
+let numberOfQuestions = document.querySelector('#numberofquestions')
 //let respostaEsta = document.querySelector('#respostaEsta')
 let pontos = 0 
 let placar = 0 
@@ -141,7 +141,7 @@ function startQuiz(){
     console.log("hello")
     startBtn.classList.add("hide")
     boxContainer.classList.remove("hide")
-    aviso.classList.remove("hide")
+    numberOfQuestions.classList.remove("hide")
     correctCounter.classList.remove("hide")
 
     nQuestion.textContent = q1.nQuestion
@@ -223,7 +223,7 @@ function fimDoJogo() {
 
     pergunta.textContent   = "Final Score: " + pontos + " out of 100 "
 
-    aviso.textContent = "Final Score: " + pontos + " out of 100 " 
+    numberOfQuestions.textContent = "Final Score: " + pontos + " out of 100 " 
 
     a.textContent = ""
     b.textContent = ""
@@ -244,7 +244,7 @@ function fimDoJogo() {
 function resetQuiz() {
     articleQuestoes.style.display = ""
     pergunta.textContent = ""
-    aviso.textContent = ""
+    numberOfQuestions.textContent = ""
     resposta.textContent = ""
 
 }
