@@ -206,7 +206,7 @@ function verificarSeAcertou(nQuestao, resposta) {
         proxima = numeroDaQuestao+1
 
         if(proxima > totalDeQuestoes) {
-            fimDoJogo()
+            gameOver()
         } else {
             proximaQuestao(proxima)
         }
@@ -214,16 +214,14 @@ function verificarSeAcertou(nQuestao, resposta) {
     desbloquearAlternativas()
 }
 
-function fimDoJogo() {
-    correctCounter.innerText = "Game Over!"
-    nQuestion.textContent = ""
-
+function gameOver() {
+    correctCounter.innerText = "You got " + pontos + " out of 10"
+    nQuestion.innerText = ""
+    numberOfQuestions.innerText = "Game Over!"
+    
     //let pont = ''
     //pontos == 0 ? pont = 'ponto' : pont = 'pontos'
-
-    pergunta.textContent   = "Final Score: " + pontos + " out of 100 "
-
-    numberOfQuestions.textContent = "Final Score: " + pontos + " out of 100 " 
+    //pergunta.textContent   = "Final Score: " + pontos + " out of 100 "
 
     a.textContent = ""
     b.textContent = ""
