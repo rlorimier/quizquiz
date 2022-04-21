@@ -11,7 +11,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: #222;
+    background: url(../media/images/space_stars.jpg);
     color: #fff;
 }
 
@@ -38,7 +38,7 @@ h1 {
     margin: 1rem;
 }
 
-.centro {
+.center {
     text-align: center;
 }
 
