@@ -104,9 +104,7 @@ const allQuestions = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
 let titulo = document.querySelector('h1')
 let correctCounter = document.querySelector('.correctcounter')
 let numberOfQuestions = document.querySelector('#numberofquestions')
-//let respostaEsta = document.querySelector('#respostaEsta')
-let pontos = 0 
-let placar = 0 
+let score = 0 
 
 // QUESTIONS
 let nQuestion = document.querySelector('#nQuestion')
@@ -192,12 +190,11 @@ function verificarSeAcertou(nQuestao, resposta) {
     let correct = allQuestions[numeroDaQuestao].correctAnswer
 
     if(respostaEscolhida == correct) {
-        pontos ++
+        score ++
     }
 
     // update score
-    placar = pontos
-    correctCounter.innerText = "Correct Answers: " + placar
+    correctCounter.innerText = "Correct Answers: " + score
 
     // block answers
     bloquearAlternativas()
@@ -215,7 +212,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 }
 
 function gameOver() {
-    correctCounter.innerText = "You got " + pontos + " out of 10"
+    correctCounter.innerText = "You got " + score + " out of 10"
     nQuestion.innerText = ""
     numberOfQuestions.innerText = "Game Over!"
 
@@ -241,6 +238,6 @@ function resetQuiz() {
     pergunta.textContent = ""
     numberOfQuestions.textContent = ""
     resposta.textContent = ""
-    pontos = 0
+    score = 0
 }
 
