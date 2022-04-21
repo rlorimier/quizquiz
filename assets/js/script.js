@@ -123,10 +123,10 @@ let articleQuestoes = document.querySelector('.box-container')
 let allChoices = document.querySelector('#allchoices')
 
 
-let numero = document.querySelector('#numero')
+let questionNumber = document.querySelector('#questionn')
 //let total  = document.querySelector('#total')
 
-numero.textContent = q1.nQuestion
+questionNumber.textContent = q1.nQuestion
 
 let totalDeQuestoes = (allQuestions.length)-1
 total.textContent = totalDeQuestoes
@@ -157,7 +157,7 @@ function startQuiz(){
 
 // for the next questions
 function nextQuestions(nQuestao) {
-    numero.textContent = nQuestao
+    questionNumber.textContent = nQuestao
     nQuestion.textContent = allQuestions[nQuestao].nQuestion
     question.textContent = allQuestions[nQuestao].question
     optionA.textContent = allQuestions[nQuestao].choiceA
