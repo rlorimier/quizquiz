@@ -156,7 +156,7 @@ function startQuiz(){
 }
 
 // for the next questions
-function proximaQuestao(nQuestao) {
+function nextQuestions(nQuestao) {
     numero.textContent = nQuestao
     nQuestion.textContent = allQuestions[nQuestao].nQuestion
     question.textContent = allQuestions[nQuestao].question
@@ -208,7 +208,7 @@ function verificarSeAcertou(nQuestao, resposta) {
         if(proxima > totalDeQuestoes) {
             gameOver()
         } else {
-            proximaQuestao(proxima)
+            nextQuestions(proxima)
         }
     }, 250)
     desbloquearAlternativas()
