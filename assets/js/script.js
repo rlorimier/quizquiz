@@ -101,40 +101,31 @@ const q10 = {
 // array with all questions
 const allQuestions = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
 
+// variables from html
 let titulo = document.querySelector('h1')
 let correctCounter = document.querySelector('.correctcounter')
 let numberOfQuestions = document.querySelector('#numberofquestions')
-let score = 0 
-
-// QUESTIONS
 let nQuestion = document.querySelector('#nQuestion')
 let question = document.querySelector('#questiontxt')
-
-// ANSWERS
 let optionA = document.querySelector('#optiona')
 let optionB = document.querySelector('#optionb')
 let optionC = document.querySelector('#optionc')
-
-// article com a class questoes
 let articleQuestoes = document.querySelector('.box-container')
-// ol li com as alternativas
 let allChoices = document.querySelector('#allchoices')
-
-
 let questionNumber = document.querySelector('#questionn')
-//let total  = document.querySelector('#total')
+let startBtn = document.getElementById("startquiz")
+let boxContainer = document.getElementById("box-container")
 
-questionNumber.textContent = q1.nQuestion
-
+let score = 0 
 let totalQuestions = (allQuestions.length)-1
 total.textContent = totalQuestions
 
-let startBtn = document.getElementById("startquiz")
+questionNumber.textContent = q1.nQuestion
+
 startBtn.addEventListener("click", startQuiz)
 
-let boxContainer = document.getElementById("box-container")
 
-//to start the quiz
+// to start the quiz
 function startQuiz(){
     // console.log("hello")
     startBtn.classList.add("hide")
@@ -149,8 +140,8 @@ function startQuiz(){
     optionC.textContent = q1.choiceC
 
     optionA.setAttribute('value', '1')
-    optionB.setAttribute('value', '2')
-    optionC.setAttribute('value', '3')
+    optionB.setAttribute('value', '1')
+    optionC.setAttribute('value', '1')
 }
 
 // for the next questions
@@ -167,14 +158,14 @@ function nextQuestions(nQuestao) {
 }
 
 // to hide the choices
-function bloquearAlternativas() {
+function blockAnswers() {
     optionA.classList.add('hide')
     optionB.classList.add('hide')
     optionC.classList.add('hide')
 }
 
 //to unhide the choices
-function desbloquearAlternativas() {
+function unblockAnswers() {
     optionA.classList.remove('hide')
     optionB.classList.remove('hide')
     optionC.classList.remove('hide')
@@ -184,20 +175,16 @@ function desbloquearAlternativas() {
 function verificarSeAcertou(nQuestao, resposta) {
 
     let numeroDaQuestao = nQuestao.value
-
-    let respostaEscolhida = resposta.textContent
-
+    let userChoice = resposta.textContent
     let correct = allQuestions[numeroDaQuestao].correctAnswer
 
-    if(respostaEscolhida == correct) {
+    // update score
+    if (userChoice == correct) {
         score ++
     }
-
-    // update score
     correctCounter.innerText = "Correct Answers: " + score
 
-    // block answers
-    bloquearAlternativas()
+    blockAnswers()
 
     setTimeout(function() {
         proxima = numeroDaQuestao + 1
@@ -207,37 +194,37 @@ function verificarSeAcertou(nQuestao, resposta) {
         } else {
             nextQuestions(proxima)
         }
-    }, 250)
-    desbloquearAlternativas()
+    }, 300)
+
+    unblockAnswers()
 }
 
 function gameOver() {
+    // final results
     correctCounter.innerText = "You got " + score + " out of 10"
-    nQuestion.innerText = ""
     numberOfQuestions.innerText = "Game Over!"
 
+    // reset all questions and answers
+    nQuestion.innerText = ""
     optionA.textContent = ""
     optionB.textContent = ""
     optionC.textContent = ""
-
     optionA.setAttribute('value', '0')
     optionB.setAttribute('value', '0')
     optionC.setAttribute('value', '0')
 
-    // OCULTAR O ARTICLE DA QUESTAO
+    // add class of hide
     articleQuestoes.style.display = 'none'
 
+    // start button is shown under different name
     startBtn.classList.remove("hide")
     startBtn.innerText = "Restart Quiz"
     startBtn.addEventListener("click", resetQuiz)
 }
 
-
+// to reset the page
 function resetQuiz() {
-    articleQuestoes.style.display = ""
-    pergunta.textContent = ""
-    numberOfQuestions.textContent = ""
-    resposta.textContent = ""
-    score = 0
+    window.location.reload(true)
+
 }
 
