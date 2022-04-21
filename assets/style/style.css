@@ -54,7 +54,7 @@ h1 {
     border-radius: 50%;
 }
 
-#pergunta {
+#questiontxt {
     margin-left: 1rem;
 }
 
@@ -118,6 +118,9 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.correctanswer {
+    background-color: green;
+}
 
 /* FOOTER */
 footer {

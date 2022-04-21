@@ -110,17 +110,17 @@ let placar = 0
 
 // QUESTIONS
 let nQuestion = document.querySelector('#nQuestion')
-let question = document.querySelector('#pergunta')
+let question = document.querySelector('#questiontxt')
 
 // ANSWERS
-let a = document.querySelector('#a')
-let b = document.querySelector('#b')
-let c = document.querySelector('#c')
+let optionA = document.querySelector('#optiona')
+let optionB = document.querySelector('#optionb')
+let optionC = document.querySelector('#optionc')
 
 // article com a class questoes
 let articleQuestoes = document.querySelector('.box-container')
 // ol li com as alternativas
-let alternativas = document.querySelector('#alternativas')
+let allChoices = document.querySelector('#allchoices')
 
 
 let numero = document.querySelector('#numero')
@@ -146,13 +146,13 @@ function startQuiz(){
 
     nQuestion.textContent = q1.nQuestion
     question.textContent   = q1.question
-    a.textContent = q1.choiceA
-    b.textContent = q1.choiceB
-    c.textContent = q1.choiceC
+    optionA.textContent = q1.choiceA
+    optionB.textContent = q1.choiceB
+    optionC.textContent = q1.choiceC
 
-    a.setAttribute('value', '1')
-    b.setAttribute('value', '2')
-    c.setAttribute('value', '3')
+    optionA.setAttribute('value', '1')
+    optionB.setAttribute('value', '2')
+    optionC.setAttribute('value', '3')
 }
 
 // for the next questions
@@ -160,26 +160,26 @@ function nextQuestions(nQuestao) {
     numero.textContent = nQuestao
     nQuestion.textContent = allQuestions[nQuestao].nQuestion
     question.textContent = allQuestions[nQuestao].question
-    a.textContent = allQuestions[nQuestao].choiceA
-    b.textContent = allQuestions[nQuestao].choiceB
-    c.textContent = allQuestions[nQuestao].choiceC
-    a.setAttribute('value', nQuestao+'A')
-    b.setAttribute('value', nQuestao+'B')
-    c.setAttribute('value', nQuestao+'C')
+    optionA.textContent = allQuestions[nQuestao].choiceA
+    optionB.textContent = allQuestions[nQuestao].choiceB
+    optionC.textContent = allQuestions[nQuestao].choiceC
+    optionA.setAttribute('value', nQuestao+'A')
+    optionB.setAttribute('value', nQuestao+'B')
+    optionC.setAttribute('value', nQuestao+'C')
 }
 
 // to hide the choices
 function bloquearAlternativas() {
-    a.classList.add('hide')
-    b.classList.add('hide')
-    c.classList.add('hide')
+    optionA.classList.add('hide')
+    optionB.classList.add('hide')
+    optionC.classList.add('hide')
 }
 
 //to unhide the choices
 function desbloquearAlternativas() {
-    a.classList.remove('hide')
-    b.classList.remove('hide')
-    c.classList.remove('hide')
+    optionA.classList.remove('hide')
+    optionB.classList.remove('hide')
+    optionC.classList.remove('hide')
 }
 
 // to check if is the right answer
@@ -192,7 +192,7 @@ function verificarSeAcertou(nQuestao, resposta) {
     let correct = allQuestions[numeroDaQuestao].correctAnswer
 
     if(respostaEscolhida == correct) {
-        pontos ++ 
+        pontos ++
     }
 
     // update score
@@ -218,18 +218,14 @@ function gameOver() {
     correctCounter.innerText = "You got " + pontos + " out of 10"
     nQuestion.innerText = ""
     numberOfQuestions.innerText = "Game Over!"
-    
-    //let pont = ''
-    //pontos == 0 ? pont = 'ponto' : pont = 'pontos'
-    //pergunta.textContent   = "Final Score: " + pontos + " out of 100 "
 
-    a.textContent = ""
-    b.textContent = ""
-    c.textContent = ""
+    optionA.textContent = ""
+    optionB.textContent = ""
+    optionC.textContent = ""
 
-    a.setAttribute('value', '0')
-    b.setAttribute('value', '0')
-    c.setAttribute('value', '0')
+    optionA.setAttribute('value', '0')
+    optionB.setAttribute('value', '0')
+    optionC.setAttribute('value', '0')
 
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
@@ -239,11 +235,12 @@ function gameOver() {
     startBtn.addEventListener("click", resetQuiz)
 }
 
+
 function resetQuiz() {
     articleQuestoes.style.display = ""
     pergunta.textContent = ""
     numberOfQuestions.textContent = ""
     resposta.textContent = ""
-
+    pontos = 0
 }
 

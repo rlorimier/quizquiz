@@ -9,25 +9,25 @@
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
-    <section class='conteudos tela-principal'>
+    <section class='main-page'>
        <h1>Space Quiz</h1>
        <div class="center hide correctcounter">Correct Answers: 0</div>
        <div id='numberofquestions' class="hide">Question: <span id='numero'>0</span> / <span id='total'></span></div> 
        <button id="startquiz">Start Quiz</button>
-       <article id="box-container" class='box-container hide'>
+       <div id="box-container" class='box-container hide'>
             <header class='box-question'>
                 <span id='nQuestion'></span>
-                <h2 id='pergunta'></h2>
+                <h2 id='questiontxt'></h2>
             </header>
             <div class='box-answers'>
-                <ol type='A' id='alternativas'>
-                    <li id='a' value='1' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
-                    <li id='b' value='2' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
-                    <li id='c' value='3' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                <ol type='A' id='allchoices'>
+                    <li id='optiona' value='1' onClick='verificarSeAcertou(this, this)'></li>
+                    <li id='optionb' value='2' onClick='verificarSeAcertou(this, this)'></li>
+                    <li id='optionc' value='3' onClick='verificarSeAcertou(this, this)'></li>
                 </ol>
             </div>
             <!--<button class="h" id="nextbtn">Next</button>-->
-        </article>
+        </div>
     </section>
     <footer class='center'>Copyright &copy; 2022</footer>
     <script src="assets/js/script.js"></script>
