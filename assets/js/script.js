@@ -116,6 +116,7 @@ let questionNumber = document.querySelector('#questionn')
 let startBtn = document.getElementById("startquiz")
 let boxContainer = document.getElementById("box-container")
 let infoBar = document.querySelector(".infobar")
+let startBox = document.querySelector("#start-box")
 
 let score = 0 
 let totalQuestions = (allQuestions.length)-1
@@ -130,6 +131,7 @@ startBtn.addEventListener("click", startQuiz)
 function startQuiz(){
     // console.log("hello")
     startBtn.classList.add("hide")
+    startBox.classList.add("hide")
     boxContainer.classList.remove("hide")
     numberOfQuestions.classList.remove("hide")
     correctCounter.classList.remove("hide")
@@ -220,7 +222,7 @@ function gameOver() {
 
     // start button is shown under different name
     startBtn.classList.remove("hide")
-    startBtn.innerText = "Restart Quiz"
+    startBtn.innerText = "Restart"
     startBtn.addEventListener("click", resetQuiz)
 }
 

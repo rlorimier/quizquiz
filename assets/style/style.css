@@ -71,6 +71,21 @@ h1 {
     align-items: center;
 }
 
+#start-box {
+    background: #191919;
+    color: #00b0ff;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: 30px;
+    height: 300px;
+    width: 800px;
+    
+}
+
+.gamerules li {
+    list-style: none;
+}
+
 /* QUIZ CONTAINER */
 .box-container {
     background-color: #191919;
@@ -107,9 +122,9 @@ h1 {
     color: #191919;
     font-size: larger;
     font-weight: bolder;
-    padding: 2rem;
+    padding: 1rem 2rem;
     border-radius: 8px;
-    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 #startquiz:hover {
