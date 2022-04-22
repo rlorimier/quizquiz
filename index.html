@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../quizquiz/assets/media/images/favicon.ico" type="image/x-icon">
     <title>Space Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
     <section class='main-page'>
-       <h1>Space Quiz</h1>
-       <div class="center hide correctcounter">Correct Answers: 0</div>
-       <div id='numberofquestions' class="hide">Question: <span id='questionn'>0</span> / <span id='total'></span></div> 
-       <button id="startquiz">Start Quiz</button>
-       <div id="box-container" class='box-container hide'>
+       <h1><i class="fa fa-rocket" style="font-size:24px;color:#00b0ff"></i>
+        Space Quiz
+        <i class="fa fa-rocket" style="font-size:24px;color:#00b0ff"></i></h1>
+        <div class="infobar hide">
+            <div id='numberofquestions' class="hide">Question: <span id='questionn'>0</span> / <span id='total'></span></div> 
+            <div class="hide correctcounter">Correct Answers: 0</div>
+        </div>
+        <div>
+            <button id="startquiz">Start Quiz</button>
+        </div>
+        
+        <div id="box-container" class='box-container hide'>
             <header class='box-question'>
                 <span id='nQuestion'></span>
                 <h2 id='questiontxt'></h2>

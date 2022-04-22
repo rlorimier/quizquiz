@@ -58,10 +58,23 @@ h1 {
     margin-left: 1rem;
 }
 
+.infobar {
+    background: #191919;
+    color: #00b0ff;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: 8px;
+    height: 50px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* QUIZ CONTAINER */
 .box-container {
     background-color: #191919;
-    width: 950px;
+    width: 800px;
     height: 450px;
     padding: 1.5rem;
     border: 1px solid #ececec;
@@ -103,7 +116,7 @@ h1 {
     color: #ccc;
     background-color: #191919;
 }
-
+/*
 .correctcounter {
     background: #ccc;
     color: #191919;
@@ -116,11 +129,10 @@ h1 {
 #numberofquestions {
     color: #00b0ff;
     margin-bottom: 1rem;
-}
+}*/
 
-.correctanswer {
-    background-color: green;
-}
+
+
 
 /* FOOTER */
 footer {

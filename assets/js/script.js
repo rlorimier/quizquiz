@@ -115,6 +115,7 @@ let allChoices = document.querySelector('#allchoices')
 let questionNumber = document.querySelector('#questionn')
 let startBtn = document.getElementById("startquiz")
 let boxContainer = document.getElementById("box-container")
+let infoBar = document.querySelector(".infobar")
 
 let score = 0 
 let totalQuestions = (allQuestions.length)-1
@@ -132,6 +133,7 @@ function startQuiz(){
     boxContainer.classList.remove("hide")
     numberOfQuestions.classList.remove("hide")
     correctCounter.classList.remove("hide")
+    infoBar.classList.remove("hide")
 
     nQuestion.textContent = q1.nQuestion
     question.textContent = q1.question
