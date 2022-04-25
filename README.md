@@ -12,13 +12,21 @@ I underestimated the JavaScript lessons and did not take them as serious as I sh
 Everyone can enjoy!
 
 ## Features
-### Existing features
+### Existing code features
 - Created in HTML5, CSS and JavaScript using Visual Studio Code.
+- Add comments for an easy and clear code understanding. 
 
+### Existing user features
+- Before the game starts, user is presented with the game rules.
+- Quiz is made of 10 questions with 3 choices each.
+- All questions are related to space.
+- After the user selects an answer the quiz is automatically redirected to the next question.
+- If the user selects the correct answer the score is updated.
+- At the end, user is presented with an option to restart the quiz.
 ### Features for future implementation
 - Add a list with best scores and save it
 - Add more questions
-- Shuffle the questions
+- Shuffled questions
 ## Technologies used
 - HTML5
 - CSS3
@@ -29,6 +37,7 @@ Everyone can enjoy!
 - [Visual Studio Code](https://code.visualstudio.com/) as IDE
 - [Git](https://git-scm.com/) for version control
 - [GitHub](https://github.com/) to storage files and deployment of the website
+- [TechSini](http://techsini.com/multi-mockup/index.php) multi device website mockup generator
 
 ## Resources
 - [Code Institute](https://codeinstitute.net/) course materials and Slack community
