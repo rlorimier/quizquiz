@@ -43,6 +43,7 @@ Everyone can enjoy!
 - [Code Institute](https://codeinstitute.net/) course materials and Slack community
 - [W3schools](https://www.w3schools.com/)
 - [Curso em Video](https://www.cursoemvideo.com/)
+- [Udemy](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/)
 
 ## Credits
 ### Content
