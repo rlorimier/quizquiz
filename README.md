@@ -18,15 +18,17 @@ Everyone can enjoy!
 
 ### Existing user features
 - Before the game starts, user is presented with the game rules.
+  ![Rules](assets/media/images/quizquiz.png)
 - Quiz is made of 10 questions with 3 choices each.
 - All questions are related to space.
 - After the user selects an answer the quiz is automatically redirected to the next question.
 - If the user selects the correct answer the score is updated.
 - At the end, user is presented with an option to restart the quiz.
+  ![Restart](assets/media/images/restart.png)
 ### Features for future implementation
 - Add a list with best scores and save it
 - Add more questions
-- Shuffled questions
+- Shuffle the questions
 ## Technologies used
 - HTML5
 - CSS3
