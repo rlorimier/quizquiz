@@ -4,8 +4,6 @@ For my Second Project on Code Institute's Diploma in Software Developement cours
 
 You can check out the game by clicking [HERE](https://rlorimier.github.io/quizquiz/)
 
-I underestimated the JavaScript lessons and did not take them as serious as I should. For that reason my project is finalized but not exactly the way I have imagined when I started. I also did not use properly the tolls I have available for support (mentor, tutor, slack community) and for that I fully regret. I managed to finish this project working hard on the last day and I am not proud of that.
-
 ![Space Quiz](assets/media/images/mockup.png)
 
 ## Who is this for?
@@ -52,6 +50,17 @@ Everyone can enjoy!
 - All questions were taken from several different websites.
 ### Coding
 - The main code was taken from [This Website](https://edsonmaiap.wordpress.com/2021/09/25/curso-de-js-aula-20-aplicacoes-com-javascript-quiz-extensivel-e-com-placar/) and then edited as needed.
+
+## Coding
+### Submitting for the first time
+- The first time I submitted it I had some issues understanding JavaScript. I copied the code from another website and edited as needed. However, some of the features was not working properly. The main issue I had was the restart button which was not working at all.
+
+### Submitting for the second time
+- Before start editing the code, I watched videos with basic JavaScript coding on Udemy and Curso em Video. Both courses gave me a better understanding on how to build functions and on how they interact between themselves.
+- When I started coding I had a clear vision of what I wanted and how to do it. I changed all the variables names on JavaScript to english and created new ones. I also changed some of the elements on HTML and created new classes and id for better interaction with CSS and JavaScript. However, I was still having problems on making the Restart button works.
+- I had one meeting with my mentor after finished coding and he was able to explain me what needed to be done to fix the problem with the button. After the changes made, the application was working smoothly and with no errors.
+
+
 ## Testing
 ### Browser Testing
 The website buttons, links and functionality has been tested.
