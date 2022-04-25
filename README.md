@@ -56,12 +56,13 @@ Tests has been carried out on Google Chrome, Microsoft Edge, Firefox, Internet E
 #### Issue
 *On Internet Explorer the website is not supported*
 ### Validators
-- CSS: The website has also been through Jigsaw Validator with [no errors/warnings](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frlorimier.github.io%2Fquizquiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) shown.
+- CSS: The website has been through Jigsaw Validator with [no errors/warnings](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frlorimier.github.io%2Fquizquiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) shown.
 ![CSS Validator](assets/media/images/cssvalidator.png)
 
-- HTML: The website has been through W3C HTML Validator with a [Warning](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Frlorimier.github.io%2Fquizquiz%2F)
-#### Bug/rror fixed on HTML:
-![Issue](assets/media/images/error-html.png)
+- HTML: The website has been through W3C HTML Validator with [no errors/warnings](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Frlorimier.github.io%2Fquizquiz%2F)
+![HTML Validator](assets/media/images/htmlvalidator.png)
+
+- JavaScript: Checked using Google DevTools and no errors/warnings were shown.
 
 ## Creating a Repository and Deploying
 - The steps to create a new repository:
